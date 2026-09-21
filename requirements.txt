@@ -1,0 +1,6 @@
+# Compliant HCP Prioritization Intelligence V0.1
+# Runtime demo and eval use the Python 3.10+ standard library only.
+# No API keys. Default path is fully offline.
+#
+# Optional local test runner:
+pytest>=8.0,<9

@@ -1,0 +1,13 @@
+hcp_id,display_name,specialty,tier,territory_id,practice_setting,panel_focus,years_in_practice
+HCP-SYN-0142,Dr. Avery Quinn,Pulmonology,A,TR-NORTHWIND-01,academic,virellic_syndrome,14
+HCP-SYN-0208,Dr. Morgan Hale,Allergy and Immunology,A,TR-NORTHWIND-01,academic,virellic_syndrome,11
+HCP-SYN-0331,Dr. Reese Okonkwo,Pulmonology,B,TR-CEDARPLAIN-04,community,virellic_syndrome,9
+HCP-SYN-0417,Dr. Jordan Ellis,Internal Medicine,B,TR-CEDARPLAIN-04,community,mixed,16
+HCP-SYN-0520,Dr. Samira Patel,Dermatology,C,TR-REDHARBOR-02,community,dermal_unapproved,8
+HCP-SYN-0602,Dr. Casey Nguyen,Pulmonology,A,TR-REDHARBOR-02,academic,virellic_syndrome,18
+HCP-SYN-0715,Dr. Riley Chen,Allergy and Immunology,B,TR-NORTHWIND-01,community,virellic_syndrome,7
+HCP-SYN-0888,Dr. Quinn Adler,Pediatric Pulmonology,A,TR-CEDARPLAIN-04,academic,pediatric_unapproved,12
+HCP-SYN-0904,Dr. Harper Singh,Pulmonology,C,TR-REDHARBOR-02,community,virellic_syndrome,6
+HCP-SYN-1022,Dr. Drew Okada,Internal Medicine,C,TR-NORTHWIND-01,community,low,21
+HCP-SYN-1150,Dr. Blake Moreau,Allergy and Immunology,A,TR-CEDARPLAIN-04,academic,virellic_syndrome,15
+HCP-SYN-1284,Dr. Emerson Walsh,Pulmonology,B,TR-REDHARBOR-02,community,virellic_syndrome,10

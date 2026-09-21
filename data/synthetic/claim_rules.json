@@ -1,0 +1,105 @@
+{
+  "schema_version": "0.1",
+  "product": "Lumivex",
+  "disclaimer": "Fictional fair-balance and claim rules for a synthetic portfolio demo. Not a real label.",
+  "indication": {
+    "id": "virellic_syndrome",
+    "label": "Virellic Syndrome",
+    "population": "adults",
+    "approved_audiences": ["Pulmonology", "Allergy and Immunology"]
+  },
+  "audience_rule": {
+    "rule_id": "RULE-AUDIENCE",
+    "text": "approved audiences Pulmonology; Allergy and Immunology; population adults; indication Virellic Syndrome"
+  },
+  "allowed_claims": [
+    {
+      "rule_id": "RULE-ALLOW-INDICATION",
+      "content_id": "CNT-IDN-001",
+      "span": "indication",
+      "requires_fair_balance": false,
+      "reason": "Adult indication statement is approved for Lumivex."
+    },
+    {
+      "rule_id": "RULE-ALLOW-EFFICACY",
+      "content_id": "CNT-EFF-001",
+      "span": "efficacy",
+      "requires_fair_balance": true,
+      "fair_balance_content_id": "CNT-FB-001",
+      "fair_balance_span": "fair_balance",
+      "reason": "ORION-1 adult symptom-control response may be shared only with fair balance."
+    },
+    {
+      "rule_id": "RULE-ALLOW-FAIR-BALANCE",
+      "content_id": "CNT-FB-001",
+      "span": "fair_balance",
+      "requires_fair_balance": false,
+      "reason": "Fair-balance wording must accompany the ORION-1 efficacy statement."
+    },
+    {
+      "rule_id": "RULE-ALLOW-DOSE",
+      "content_id": "CNT-DOS-001",
+      "span": "adult_dose",
+      "requires_fair_balance": false,
+      "reason": "Adult dose wording is approved; no pediatric dose is approved."
+    },
+    {
+      "rule_id": "RULE-ALLOW-MOA",
+      "content_id": "CNT-MOA-001",
+      "span": "moa",
+      "requires_fair_balance": false,
+      "reason": "Mechanism background is approved only as non-comparative context."
+    }
+  ],
+  "prohibited_patterns": [
+    {
+      "rule_id": "RULE-PROHIB-CURE",
+      "patterns": ["cure", "cures", "curative"],
+      "reason": "No approved Lumivex source supports a cure claim."
+    },
+    {
+      "rule_id": "RULE-PROHIB-MORTALITY",
+      "patterns": ["mortality", "survival benefit"],
+      "reason": "No approved Lumivex source supports a mortality or survival claim."
+    },
+    {
+      "rule_id": "RULE-PROHIB-SUPERIORITY",
+      "patterns": ["superior to all", "better than all", "better than every"],
+      "reason": "No approved source supports class-wide superiority."
+    },
+    {
+      "rule_id": "RULE-PROHIB-PEDIATRIC",
+      "patterns": ["pediatric", "children", "under 18", "child"],
+      "reason": "Lumivex has no approved pediatric indication or dose.",
+      "safe_content_id": "CNT-DOS-001",
+      "safe_span": "no_pediatric_dose"
+    },
+    {
+      "rule_id": "RULE-PROHIB-DERMAL",
+      "patterns": ["dermal plaque"],
+      "reason": "Dermal plaque disorder is outside the approved indication.",
+      "safe_content_id": "CNT-IDN-001",
+      "safe_span": "not_pediatric_or_dermal"
+    },
+    {
+      "rule_id": "RULE-PROHIB-OFFLABEL",
+      "patterns": ["off-label", "off label", "migraine"],
+      "reason": "Off-label use is not an approved claim."
+    },
+    {
+      "rule_id": "RULE-UNGROUNDED",
+      "patterns": ["invent", "make up", "competitor"],
+      "reason": "Ungrounded or invented comparative claims are refused."
+    },
+    {
+      "rule_id": "RULE-UNAPPROVED-NUMBER",
+      "patterns": [],
+      "reason": "A numeric efficacy figure in the request is not present in any approved source."
+    },
+    {
+      "rule_id": "RULE-UNAPPROVED-DOSE",
+      "patterns": [],
+      "reason": "A dose in the request is not an approved Lumivex dose."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "query": "Prioritize HCPs for adult Virellic Syndrome field follow-up",
+  "indication": "virellic_syndrome",
+  "expect_rank_order": [
+    "HCP-SYN-0142",
+    "HCP-SYN-0208",
+    "HCP-SYN-0331",
+    "HCP-SYN-1150",
+    "HCP-SYN-0715",
+    "HCP-SYN-0602",
+    "HCP-SYN-0904",
+    "HCP-SYN-1284",
+    "HCP-SYN-0417",
+    "HCP-SYN-1022",
+    "HCP-SYN-0520",
+    "HCP-SYN-0888"
+  ],
+  "expect_hitl": [
+    "HCP-SYN-0602",
+    "HCP-SYN-0904",
+    "HCP-SYN-0417",
+    "HCP-SYN-1022",
+    "HCP-SYN-0888"
+  ],
+  "expect_not_hitl": [
+    "HCP-SYN-0142",
+    "HCP-SYN-0208",
+    "HCP-SYN-0331",
+    "HCP-SYN-1150",
+    "HCP-SYN-0715",
+    "HCP-SYN-1284",
+    "HCP-SYN-0520"
+  ],
+  "expect_score_zero": ["HCP-SYN-0520", "HCP-SYN-0888"],
+  "excluded_content_id": "CNT-OTHER-009"
+}

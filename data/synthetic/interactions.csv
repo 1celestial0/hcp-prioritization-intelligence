@@ -1,0 +1,17 @@
+interaction_id,hcp_id,interaction_date,channel,content_id,outcome,note
+INT-2001,HCP-SYN-0142,2026-02-18,in_person,CNT-EFF-001,requested_info,Asked for the ORION-1 week-24 response definition
+INT-2002,HCP-SYN-0142,2026-01-09,email,CNT-IDN-001,engaged,Reviewed adult indication boundaries
+INT-2003,HCP-SYN-0208,2026-03-01,virtual,CNT-MOA-001,engaged,Discussed fictional VIREL-7 background
+INT-2004,HCP-SYN-0208,2025-11-20,in_person,CNT-EFF-001,engaged,Reviewed symptom-control response wording
+INT-2005,HCP-SYN-1150,2025-10-02,email,CNT-IDN-001,no_response,Email not returned
+INT-2006,HCP-SYN-0602,2026-02-25,in_person,CNT-EFF-001,declined,Declined efficacy discussion this cycle
+INT-2007,HCP-SYN-0602,2025-12-12,email,CNT-DOS-001,requested_info,Requested adult dosing content
+INT-2008,HCP-SYN-0331,2026-02-02,virtual,CNT-EFF-001,engaged,Walked through symptom-control response
+INT-2009,HCP-SYN-0331,2026-01-15,email,CNT-FB-001,engaged,Reviewed fair-balance wording
+INT-2010,HCP-SYN-0715,2026-01-28,in_person,CNT-IDN-001,requested_info,Requested indication boundaries before next visit
+INT-2011,HCP-SYN-1284,2026-02-10,email,,no_response,Outreach email received no response
+INT-2012,HCP-SYN-0417,2025-12-01,in_person,CNT-IDN-001,engaged,Mixed adult respiratory panel; indication only partly relevant
+INT-2013,HCP-SYN-0904,2025-09-15,email,CNT-EFF-001,no_response,Older outreach email received no response
+INT-2014,HCP-SYN-1022,2026-03-05,virtual,,no_response,General check-in with no indication discussion
+INT-2015,HCP-SYN-0520,2026-02-20,in_person,,declined,Practice focus is outside the approved indication
+INT-2016,HCP-SYN-0888,2026-02-11,virtual,CNT-DOS-001,requested_info,Asked about patients under 18
