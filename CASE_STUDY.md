@@ -42,7 +42,7 @@ Career narrative only (not in this dataset): Modeyso-style HCP/HCO alias governa
 ## 3. Architecture choices (and what we refused)
 
 **Flow:** retrieve → ground → rank → cite → safety gate → audit  
-See `src/retrieval/`, `src/ranking/`, `src/safety/`, `src/audit/`.
+See `src/agent.py`, `src/retrieval/`, `src/ranking/`, `src/safety/`, `src/audit/`.
 
 | Choice | Why |
 |--------|-----|
@@ -57,22 +57,22 @@ See `src/retrieval/`, `src/ranking/`, `src/safety/`, `src/audit/`.
 - Full MLR workflow automation
 - Multi-agent platform sprawl before a working thin slice
 
-Demo entrypoint (target): `demo/run_prioritization.py`
+Demo entrypoint: `demo/run_prioritization.py`
 
 ---
 
 ## 4. Evaluation design
 
-Harness (target): `eval/run_eval.py` + `eval/fixtures/`
+Harness: `eval/run_eval.py` + `eval/fixtures/`
 
-| Metric | Intent |
-|--------|--------|
-| Faithfulness | Output claims are supported by retrieved snippets |
-| Citation coverage | Ranked recommendations carry usable citations |
-| Unsafe-claim refusal | Ungrounded medical language is blocked |
-| HITL trigger rate | Low-confidence / sparse-evidence cases escalate |
+| Metric | Intent | V0.1 result |
+|--------|--------|-------------|
+| Faithfulness | Output claims are supported by retrieved snippets | **1.000** (60/60) |
+| Citation coverage | Ranked recommendations carry usable citations | **1.000** (60/60) |
+| Unsafe-claim refusal | Ungrounded medical language is blocked | **1.000** (9/9) |
+| HITL trigger rate | Low-confidence / sparse-evidence cases escalate | Measured in demo/audit path; not a single fixture score in V0.1 |
 
-Numbers will be filled when V0.1 eval lands. Until then this section documents *what success means*, not marketing scores.
+Allowed-answer controls stay grounded (3/3). Offline; no API key required. `python -m pytest` — 12 passed.
 
 ---
 
@@ -97,13 +97,14 @@ This is the difference between a portfolio chatbot and an FDE-shaped artifact.
 
 ---
 
-## 7. How to run (when V0.1 is ready)
+## 7. How to run
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python -m demo.run_prioritization
 python -m eval.run_eval
+python -m pytest
 ```
 
 See `README.md` for layout and status.

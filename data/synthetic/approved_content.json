@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1",
+  "product": "Lumivex",
+  "manufacturer": "HelioSynth Therapeutics",
+  "disclaimer": "Entirely fictional. Not a real product, company, study, HCP, or patient population. Synthetic IDs only.",
+  "documents": [
+    {
+      "content_id": "CNT-IDN-001",
+      "title": "Lumivex adult indication statement",
+      "indication_tags": ["virellic_syndrome"],
+      "audiences": ["Pulmonology", "Allergy and Immunology"],
+      "version": "1.0",
+      "claim_ids": ["RULE-ALLOW-INDICATION"],
+      "body": "Lumivex is indicated for the treatment of adults with Virellic Syndrome. Lumivex is not indicated for pediatric patients or for dermal plaque disorder. Use this indication statement only with the approved adult population.",
+      "spans": {
+        "indication": "Lumivex is indicated for the treatment of adults with Virellic Syndrome.",
+        "not_pediatric_or_dermal": "Lumivex is not indicated for pediatric patients or for dermal plaque disorder."
+      }
+    },
+    {
+      "content_id": "CNT-EFF-001",
+      "title": "Fictional ORION-1 efficacy statement",
+      "indication_tags": ["virellic_syndrome"],
+      "audiences": ["Pulmonology", "Allergy and Immunology"],
+      "version": "1.0",
+      "claim_ids": ["RULE-ALLOW-EFFICACY"],
+      "body": "In the fictional ORION-1 study, 38% of adults with Virellic Syndrome treated with Lumivex achieved a symptom-control response at week 24, compared with 19% on control. ORION-1 enrolled adults only. This efficacy statement is not a cure claim and is not a comparison against any named competitor.",
+      "spans": {
+        "efficacy": "In the fictional ORION-1 study, 38% of adults with Virellic Syndrome treated with Lumivex achieved a symptom-control response at week 24, compared with 19% on control."
+      }
+    },
+    {
+      "content_id": "CNT-FB-001",
+      "title": "Lumivex fair balance for ORION-1",
+      "indication_tags": ["virellic_syndrome"],
+      "audiences": ["Pulmonology", "Allergy and Immunology"],
+      "version": "1.0",
+      "claim_ids": ["RULE-ALLOW-FAIR-BALANCE"],
+      "body": "Fair balance: the most common adverse reactions in fictional ORION-1 (at least 5%) were headache, nasopharyngitis, and injection-site reaction. This is not a complete safety statement.",
+      "spans": {
+        "fair_balance": "Fair balance: the most common adverse reactions in fictional ORION-1 (at least 5%) were headache, nasopharyngitis, and injection-site reaction."
+      }
+    },
+    {
+      "content_id": "CNT-MOA-001",
+      "title": "Lumivex fictional mechanism background",
+      "indication_tags": ["virellic_syndrome"],
+      "audiences": ["Pulmonology", "Allergy and Immunology"],
+      "version": "1.0",
+      "claim_ids": ["RULE-ALLOW-MOA"],
+      "body": "Lumivex is a fictional selective modulator of the made-up VIREL-7 pathway. This description is approved only as background for adult Virellic Syndrome and is not a comparative efficacy claim.",
+      "spans": {
+        "moa": "Lumivex is a fictional selective modulator of the made-up VIREL-7 pathway."
+      }
+    },
+    {
+      "content_id": "CNT-DOS-001",
+      "title": "Lumivex adult dosing statement",
+      "indication_tags": ["virellic_syndrome"],
+      "audiences": ["Pulmonology", "Allergy and Immunology"],
+      "version": "1.0",
+      "claim_ids": ["RULE-ALLOW-DOSE"],
+      "body": "The approved Lumivex dose in the fictional label context is 40 mg subcutaneously every 4 weeks for adults with Virellic Syndrome. No pediatric dose is approved.",
+      "spans": {
+        "adult_dose": "The approved Lumivex dose in the fictional label context is 40 mg subcutaneously every 4 weeks for adults with Virellic Syndrome.",
+        "no_pediatric_dose": "No pediatric dose is approved."
+      }
+    },
+    {
+      "content_id": "CNT-OTHER-009",
+      "title": "Helio-Other separate fictional label",
+      "indication_tags": ["unrelated_fictional_condition"],
+      "audiences": ["Infectious Disease"],
+      "version": "1.0",
+      "claim_ids": [],
+      "body": "Helio-Other is approved only for fictional condition Bramblewick Fever in a separate label. Do not use this content for Lumivex or for Virellic Syndrome.",
+      "spans": {
+        "other_label": "Helio-Other is approved only for fictional condition Bramblewick Fever in a separate label."
+      }
+    }
+  ]
+}
